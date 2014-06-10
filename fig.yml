@@ -1,0 +1,13 @@
+sentry:
+  image: marksteve/sentry
+  volumes:
+    - ./sentry.conf.py:/etc/sentry.conf.py
+  links:
+    - db:db
+  ports:
+    - 9000:9000
+  command: sentry --config=/etc/sentry.conf.py start
+
+db:
+  build: db
+
