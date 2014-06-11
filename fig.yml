@@ -1,5 +1,5 @@
 sentry:
-  image: marksteve/sentry
+  build: sentry
   volumes:
     - ./sentry.conf.py:/etc/sentry.conf.py
   links:
