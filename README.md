@@ -1,4 +1,4 @@
-Justin Sentry
+Fig environment for Sentry
 
 ```bash
 $ fig run --rm sentry sentry --config=/etc/sentry.conf.py upgrade
