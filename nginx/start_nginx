@@ -1,5 +1,5 @@
 #!/bin/bash
-cat >/etc/nginx.conf <<EOF
+cat >/etc/nginx/nginx.conf <<EOF
 user www-data;
 worker_processes 4;
 pid /run/nginx.pid;
