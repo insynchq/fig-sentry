@@ -24,3 +24,10 @@ db:
 redis:
   image: redis
   command: redis-server --appendonly yes
+
+nginx:
+  build: nginx
+  ports:
+    - 80:80
+    - 443:443
+
